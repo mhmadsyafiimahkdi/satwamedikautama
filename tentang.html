@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sadita</title>
+    <link rel="stylesheet" href="src/css/style.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+    <!-- Google font -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Icons  -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings:
+                'FILL' 0,
+                'wght' 400,
+                'GRAD' 0,
+                'opsz' 24
+        }
+
+        /* Base styles for navigation bar */
+        .nav-link {
+            text-decoration: none;
+            transition: background-color 0.3s, color 0.3s;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 12px 0;
+            /* Add padding for full height */
+        }
+
+        .nav-link .material-symbols-outlined {
+            font-size: 24px;
+            color: #9e9e9e;
+            /* Light gray color for icons */
+            transition: color 0.3s;
+        }
+
+        .nav-link p {
+            margin: 0;
+            font-size: 12px;
+            color: #9e9e9e;
+            /* Light gray color for text */
+            transition: color 0.3s;
+        }
+
+        /* Active state styles */
+        .nav-link.active {
+            background-color: #7f1d1d;
+            /* Red background for active state */
+            color: #ffffff;
+            /* White color for active icon and text */
+            height: 100%;
+            /* Ensure background stretches fully */
+        }
+
+        .nav-link.active .material-symbols-outlined,
+        .nav-link.active p {
+            color: #ffffff;
+            /* White color for active icon and text */
+        }
+
+      
+    </style>
+</head>
+
+<body class="bg-gray-100 flex items-center justify-center min-h-screen rounded-2xl">
+    <div class="bg-white  shadow-lg w-full max-w-lg flex flex-col min-h-screen">
+
+      <!-- <header class="flex justify-between items-center p-4 bg-grey-100 shadow-md">
+        <div class="float-right">
+          <a href="beranda.html"><img src="src/img/close.png" alt="" class="h-5 w-5"></a> -->
+            <!-- <img src="src/img/logo sadita.png" alt="Sadita logo" class="h-10"> -->
+        <!-- </div>
+        <div class="flex items-center space-x-4">
+            <i class="fas fa-search text-xl"></i>
+            <i class="fas fa-bars text-xl"></i>
+        </div>
+    </header> -->
+
+      <!-- <div class="float-right ">
+        <a href="beranda.html"><img src="src/img/close.png" alt="" class="h-5 w-5"></a>
+    </div> -->
+
+        <!-- navigation bar -->
+        <main class="">
+            <div class="bg-gray-100 p-8 shadow-md rounded-lg relative text-justify absolute">
+              <div class="float-right ">
+              <a href="beranda.html"> <img src="src/img/close.png" alt="" class="h-5 w-5 "></a>
+            </div>
+              <i class="fas fa-times">
+              </i>
+             <h1 class="text-xl font-bold mb-2 text-center m-4 pt-6">
+              PT. SATWA MEDIKA UTAMA
+             </h1>
+             <p class="text-sm text-gray-700 mb-4">
+              PT Satwa Medika Utama adalah perusahaan yang bergerak di industry Obat Hewan. PT Satwa Medika Utama atau yang juga dikenal dengan Scafha berfokus pada produksi dan juga distributor Obat Hewan.
+              PT Satwa Medika Utama menawarkan berbagai macam produk untuk spesies unggas, numinasia, dan akuatik.
+             </p>
+             <div class="mb-4">
+                <a href="https://youtu.be/f5XMVih6rwI?si=H4tHMu4QTxz5Cxq6"><img src="src/img/thumbnail yt 1.png" alt="" class="w-full rounded-lg" height="200" width="300"></a>
+              <!-- <a href="" class="w-full rounded-lg" height="200" src="src/img/thumbnail yt 1.png" width="300"></a> -->
+             </div>
+             <div class="grid grid-cols-2 gap-4">
+              <div class="bg-white p-4 rounded-lg flex flex-col items-center shadow-xl">
+               <img alt="Graph showing growth" class="mb-2" height="50" src="src/img/10 Tahun Pengalaman.png" width="50"/>
+               <p class="text-center text-sm">
+                10 Tahun Pengalaman
+               </p>
+              </div>
+              <div class="bg-white p-2 rounded-lg flex flex-col items-center shadow-xl">
+               <img alt="Boxes representing products" class="mb-2" height="50" src="src/img/200+ Berbagi Produk.png" width="50"/>
+               <p class=" text-center text-xs ">
+                200+ Berbagai Produk Untuk Unggas, Hewan Besar, &amp; Satwa Akuatik
+               </p>
+              </div>
+              <div class="bg-white p-2 rounded-lg flex flex-col items-center shadow-xl">
+               <img alt="Handshake representing partnership" class="mb-2" height="50" src="src/img/500+ Mitra & Klien.png" width="50"/>
+               <p class="text-center text-xs">
+                500+ Mitra &amp; Klien Tersebar diseluruh Indonesia
+               </p>
+              </div>
+              <div class="bg-white p-4 rounded-lg flex flex-col items-center shadow-xl">
+               <img alt="Box and gear representing production" class="mb-2" height="50" src="src/img/100 Ton Produk Setiap Bulan.png" width="50"/>
+               <p class="text-center text-sm">
+                100 Ton Produk Setiap Bulan
+                </p>
+            </div>
+        </div>
+       </div>
+    </main>
+       <!-- end -->
+        <!-- <header class="flex justify-between items-center p-16 bg-gray shadow-md">
+            <h2 class="font-bold ">PT. SATWA MEDIKA UTAMA</h2>
+        </header> -->
+        <div class="max-w-screen-md mx-auto py-20 px-12 items-center justify-center bg-red-800 rounded-3xl text-justify">
+            <h1 class="text-2xl font-bold text-center mb-6 text-yellow-300 ">Our Benefits</h1>
+        
+            <div class="space-y-6 ">
+              <!-- Karyawan -->
+              <li class="flex items-start">
+                <span class="text-yellow-400 text-2xl font-bold mr-2">•</span>
+              <div>
+                <h2 class="text-xl font-semibold mb-2 text-yellow-300">Karyawan</h2>
+                <p class="text-white text-xs">Karyawan yang berkompeten di bidangnya masing-masing.</p>
+              </div>
+        
+              <!-- Peralatan Standar Nasional -->
+              <li class="flex items-start">
+                <span class="text-yellow-400 text-2xl font-bold mr-2">•</span>
+              <div>
+                <h2 class="text-xl font-semibold mb-2 text-yellow-300">Peralatan Standar Nasional</h2>
+                <p class="text-white text-xs">Kami menggunakan peralatan dan bahan yang memenuhi persyaratan CPOHB dan standar nasional sehingga diperoleh produk yang berkualitas.</p>
+              </div>
+        
+              <!-- Produksi -->
+              <li class="flex items-start">
+                <span class="text-yellow-400 text-2xl font-bold mr-2">•</span>
+              <div>
+                <h2 class="text-xl font-semibold mb-2 text-yellow-300">Produksi</h2>
+                <p class="text-white text-xs">Produksi dilaksanakan sesuai dengan SOP yang telah ditetapkan.</p>
+              </div>
+        
+              <!-- Dokumentasi -->
+              <li class="flex items-start">
+                <span class="text-yellow-400 text-2xl font-bold mr-2">•</span>
+              <div>
+                <h2 class="text-xl font-semibold mb-2 text-yellow-300">Dokumentasi</h2>
+                <p class="text-white text-xs">Sistem dokumentasi PT. Satwa Medika Utama disesuaikan dengan persyaratan CPOHB dan merupakan bagian dari sistem manajemen mutu.</p>
+              </div>
+        
+              <!-- Pengawasan Mutu -->
+              <li class="flex items-start">
+                <span class="text-yellow-400 text-2xl font-bold mr-2">•</span>
+              <div>
+                <h2 class="text-xl font-semibold mb-2 text-yellow-300">Pengawasan Mutu</h2>
+                <p class="text-white text-xs">Pengawasan mutu merupakan bagian dari CPOHB (Good Manufacturing Practices/GMP) dan cara berlaboratorium yang baik (Good Laboratory Practices/GLP).</p>
+              </div>
+            </div>
+          </div>    
+            <!-- end -->
+            <div class="justify-center items-center px-12 mt-16 text-justify mb-16">
+                <h1 class="text-xl font-bold text-center mb-6">Sejarah Dinamis dan Pemikiran Progresif</h1>
+                <div class="space-y-4">
+                    <!-- 2012 Didirikan -->
+                    <li class="flex items-start">
+                        <span class="text-2xl font-bold mr-2">•</span>
+                      <div>
+                        <h2 class="text-xl font-semibold mb-2 ">2012 Didirikan</h2>
+                        <p class="text-xs">PT. Satwa Medika Utama didirikan pada tahun 2012,
+                            Pada awalnya hanya memproduksi obat hewan golongan farmasetik untuk keperluan sendiri,
+                        </p>
+                      </div>
+                      <!-- 2014 -->
+                    <li class="flex items-start">
+                        <span class="text-2xl font-bold mr-2">•</span>
+                      <div>
+                        <h2 class="text-xl font-semibold mb-2 ">2014</h2>
+                        <p class="text-xs">Mendapatkan nomor pendaftaran dan dikontrol langsung oleh BBPMSOH.</p>
+                      </div>
+                      <!-- 2015 Pabrik Berdiri -->
+                    <li class="flex items-start">
+                        <span class="text-2xl font-bold mr-2">•</span>
+                      <div>
+                        <h2 class="text-xl font-semibold mb-2 ">2015 Pabrik Berdiri</h2>
+                        <p class="text-xs">PT. Satwa Medika Utama berlokasi di Desa Pabuaran, Kecamatan Gunung Sindur, Kabupaten Bogor.</p>
+                      </div>
+                      <!-- 2018 Sertifikat CPOHB -->
+                    <li class="flex items-start">
+                        <span class="text-2xl font-bold mr-2">•</span>
+                      <div>
+                        <h2 class="text-xl font-semibold mb-2 ">2018 Sertifikat CPOHB</h2>
+                        <p class="text-xs">Mendapatkan sertifikat CPOHB dari derektorat jenderal peternakan dan kesehatan hewan Kementrian Peternakan.</p>
+                      </div>
+               </div>
+
+            </div>
+             <!-- end -->
+              <footer class="rounded-t-3xl  bg-red-800  text-white mb-16 pb-8 p-4 mt-4">
+                <div class="p-4">
+            <img alt="Logo of Sadita"src="src/img/ayam.png" alt="image" class="object-cover w-32 h-16 mb-8" />
+            <div class="mb-">
+             <h3 class="text-lg font-bold mb-2">
+                Kantor
+             </h3>
+            <p class="">
+             Pabuaran, Kec. Gn. Sindur, Kabupaten Bogor, Jawa Barat.
+            </p>
+            </div>
+            <div class="mb-4">
+             <h3 class="text-lg font-bold mb-2">
+              Hubungi Kami
+             </h3>
+            </p>
+            <p class="">
+             Saditabogor@gmail.com
+           
+            <p>
+             Admin Bogor
+            </p>
+            </p>
+            </div>
+            </div>  
+            </footer>
+             <!-- navigation bar -->
+         <!-- codingan di bawah ini jangan di ganggu -->
+        <div class="flex items-center justify-center">
+          <div class="bg-white pb-6 mt-auto fixed -bottom-6 w-full max-w-lg flex flex-col">
+              <div class="flex flex-row justify-center gap-2 w-full md:w-[412px]">
+                  <!-- Beranda -->
+                  <a href="beranda.html"
+                      class="group flex w-1/5 md:w-32 flex-col items-center justify-center gap-1 nav-link active">
+                      <div class="relative flex items-center justify-center">
+                          <span class="material-symbols-outlined">home</span>
+                      </div>
+                      <p>Beranda</p>
+                  </a>
+
+                  <!-- Tentang -->
+                  <a href="tentang.html"
+                      class="group flex w-1/5 md:w-32 flex-col items-center justify-center gap-1 nav-link">
+                      <div class="relative flex items-center justify-center">
+                          <span class="material-symbols-outlined">info</span>
+                      </div>
+                      <p>Tentang</p>
+                  </a>
+
+                  <!-- Produk -->
+                  <a href="produk.html"
+                      class="group flex w-1/5 md:w-32 flex-col items-center justify-center gap-1 nav-link">
+                      <div class="relative flex items-center justify-center">
+                          <span class="material-symbols-outlined">shopping_cart</span>
+                      </div>
+                      <p>Produk</p>
+                  </a>
+
+                  <!-- Artikel -->
+                  <a href="artikel.html"
+                      class="group flex w-1/5 md:w-32 flex-col items-center justify-center gap-1 nav-link">
+                      <div class="relative flex items-center justify-center">
+                          <span class="material-symbols-outlined">article</span>
+                      </div>
+                      <p>Artikel</p>
+                  </a>
+
+                  <!-- Chat -->
+                  <a href="chat.html"
+                      class="group flex w-1/5 md:w-32 flex-col items-center justify-center gap-1 nav-link">
+                      <div class="relative flex items-center justify-center">
+                          <span class="material-symbols-outlined">chat_bubble</span>
+                      </div>
+                      <p>Chat</p>
+                  </a>
+              </div>
+          </div>
+      </div>
+      <!-- end navigation bar -->
+
+
+
+    </div>
+    </div>
+    </div>
+    <script src="src/js/tailmater.js"></script>
+    <script>// JavaScript to handle active state dynamically
+        // Atur active class berdasarkan URL
+        document.querySelectorAll('.nav-link').forEach(link => {
+            // Periksa apakah href dari link cocok dengan URL saat ini
+            if (link.href === window.location.href) {
+                link.classList.add('active');
+            } else {
+                link.classList.remove('active');
+            }
+        });
+
+
+    </script>
+
+</body>
+
+</html>
